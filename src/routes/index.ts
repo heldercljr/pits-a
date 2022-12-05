@@ -1,0 +1,12 @@
+import { Request, Response, Router } from "express";
+
+const routes: Router = Router();
+
+routes.get("/", (request: Request, response: Response) => {
+
+	return response.json({
+		message: "Hello World!"
+	});
+});
+
+export default routes;
